@@ -1,0 +1,222 @@
+/* CSS Reset */
+
+/* Box-sizing reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margin and padding */
+body,
+h1, h2, h3, h4, h5, h6,
+p, ul, ol,
+figure, blockquote,
+dl, dd, form {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set font-size and line-height to 1 */
+html {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Remove list-style from lists */
+ul, ol {
+    list-style: none;
+}
+
+/* Remove text-decoration from links */
+a {
+    text-decoration: none;
+}
+
+/* Remove border from images and other elements */
+img,
+input,
+button {
+    border: none;
+}
+
+/* Remove default form styles */
+button,
+input,
+optgroup,
+select,
+textarea {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    padding: 60px;
+}
+
+.header__image img {
+    max-width: 40%;
+    height: auto;
+}
+
+.header__text h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffff;
+    text-align: right;
+}
+
+/* Set the background-color and color for the body */
+body {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Set the font-family for the body */
+body {
+    font-family: sans-serif;
+}
+
+
+/* set the width of each column */
+nav {
+    width: 100%;
+}
+
+section, aside {
+    width: 33%;
+}
+
+/* set the display property for each column */
+section, aside {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* set the width of the wrapper element */
+#wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* style the header and footer */
+header {
+    background-color: #cc1330;
+}
+footer {
+    background-color: #cc1330;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+
+/* style the main section
+main {
+    align-items: center;
+}
+*/
+
+/* style the content section */
+section {
+    background-color: #f2f2f2;
+    padding: 40px;
+}
+
+/* style the navigation section */
+nav {
+    background-color: #f08c21;
+    padding: 22px;
+    text-align: center;
+    text-transform: uppercase;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* style the sidebar section */
+aside {
+    background-color: #eee;
+    padding: 40px;
+}
+/* style the table */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #4b388a;
+    font-weight: bold;
+}
+
+/* media query for mobile devices */
+@media (max-width: 767px) {
+    /* set the display property for each column to block */
+    nav, section, aside {
+        display: block;
+    }
+    /* set the width of each column to 100% */
+    nav, section, aside {
+        width: 100%;
+    }
+}
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgb(221, 160, 44), rgba(255, 0, 0, 0.75), rgb(221, 160, 44));
+}
+
+.colorear-hover {
+    background: linear-gradient(to bottom right, #ff372e, #f19721);
+    color: white;
+    transition: background 0.3s ease;
+}
+
+.colorear-hover:hover {
+    background: linear-gradient(to bottom right, #0a9862, #1674a6);
+}
+
+.super{
+    max-width: 90%;
+    align-items: center;
+}
+figcaption {
+    font-size: small;
+}
+
+figcaption a {
+    color: black;
+}
+
+nav a {
+    margin-right: 40px;
+}
+
+nav a:last-child {
+    margin-right: 0;
+}
+
+nav a:hover {
+    background-color: #cc1330;
+    padding: 8px;
+}
+
+p a {
+    color: #cc1330;
+}
