@@ -175,6 +175,14 @@ th {
     nav, section, aside {
         width: 100%;
     }
+    
+    .header {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .header__text h1 {
+        font-size: 1.5rem;
+    }
 }
 hr {
     border: 0;
